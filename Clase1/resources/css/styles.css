@@ -1,0 +1,15 @@
+h1{
+    color: red;
+}
+
+/* selector id */
+#subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+    font-size: large;
+}
+
+/* selector de clase */
+.estilo{
+color:red;
+}
