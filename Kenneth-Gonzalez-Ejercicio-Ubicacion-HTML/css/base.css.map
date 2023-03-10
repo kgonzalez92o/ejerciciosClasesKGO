@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sass/_general.sass","base.css","../sass/_variables.sass","../sass/_herencia.sass"],"names":[],"mappings":"AACA;EACI,cAAA;ACAJ;;ADEA;EACI,4BELY;EFMZ,kCAAA;EACA,kBAAA;ACCJ;ADAI;EACI,WAAA;EACA,YAAA;ACER;;ADAA;EACI,aAAA;EACA,uBAAA;ACGJ;AEjBA;EACI,yBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;AFmBJ","file":"base.css"}
