@@ -1,0 +1,104 @@
+.contenedor-section
+    display: flex
+    flex-direction: column
+    -webkit-box-align: center
+    align-items: center
+    padding: 0px
+.contenedor-section-princing
+    display: flex
+    flex-direction: column
+    max-width: 100%
+
+@media (min-width: 992px)
+.contenedor-section-princing
+    max-width: var(--block-max-width)
+
+.contenedor-cards-princing
+    display: flex
+    -webkit-box-pack: center
+    justify-content: center
+    gap: 32px
+    margin-bottom: 100px
+
+.contenedor-cards-pricing-interno
+    width: 25%
+    padding: 32px 28px
+    min-height: 600px
+    -webkit-box-align: center
+    align-items: center
+    background: var(--color-bg-transparent)
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 3px inset, rgb(33, 40, 49) 0px -1px 3px inset
+    border-radius: 24px
+.h3-reg
+    font-weight: 500
+    line-height: 128%
+
+.contenedor-titulo-pricing
+    margin-bottom: 4px
+    .h3-reg
+        margin-bottom: 8px
+        font-size: 24px
+    .pricing-subtitle
+        min-height: 60px
+        font-size: 15px
+        line-height: 21px
+        color: var(--color-gray)
+@media (min-width: 992px)
+.contenedor-titulo-pricing
+    .pricing-subtitle
+        margin-bottom: 0px
+
+.contenedor-caracteristicas-pricing
+    display: flex
+    flex-direction: column
+    .pricing-value
+        display: flex
+        -webkit-box-align: center
+        align-items: center
+        margin-top: 0px
+        margin-bottom: 4px
+    .pricing-description
+        display: flex
+        flex-direction: column
+        min-height: 80px
+    .h1-medium
+        font-weight: 500
+        font-size: 52px
+        line-height: 58px
+    sup
+        font-size: 55%
+    .flat-rate
+        font-size: 14px
+        margin-top: -8px
+        margin-left: 12px
+        line-height: 18px
+
+.contenedor-bt-descripcion
+    display: flex
+    width: 100%
+    position: relative
+    background: none
+    border: 0px
+    outline: 0px
+    padding: 0px
+
+.contenedor-caracteristicas
+    display: grid
+    grid-template-columns: 20px auto
+    gap: 8px
+    margin-bottom: 14px
+    color: var(--body-color)
+    line-height: 21px
+    button
+        -webkit-appearance: button
+        background-color: transparent
+        background-image: none
+        border: transparent
+
+.contenedor-tabla-pricing
+    display: none
+    flex-direction: column
+
+@media (min-width: 992px)
+.contenedor-tabla-pricing
+    display: flex

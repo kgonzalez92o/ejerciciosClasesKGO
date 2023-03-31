@@ -1,0 +1,479 @@
+.contenedor-principal-mindmap
+    display: flex
+    width: 100%
+    max-width: var(--block-max-width)
+    flex-direction: column
+    margin: 0px auto
+    position: relative
+    z-index: 10
+    padding: 0px 20px
+
+@media (min-width: 1000px)
+.contenedor-principal-mindmap
+    padding: 0px 30px
+
+.contenedor-buscador
+    display: flex
+    -webkit-box-pack: justify
+    justify-content: space-between
+    gap: 10px
+    padding: 12px 0px
+    position: sticky
+    top: 56px
+    z-index: 10
+    background: rgba(5, 5, 5, 0.8)
+
+@media (min-width: 992px)
+    .contenedor-buscador
+        top: 70px
+.bt-inicio-buscador
+    display: flex
+    width: 100%
+    max-width: 44px
+    height: 44px
+    -webkit-box-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    align-items: center
+    margin-right: auto
+    border-radius: 10px
+    text-decoration: none
+    color: rgb(255, 255, 255)
+    background: rgb(28, 30, 33)
+    padding: 0px
+    transition: background-color 150ms ease-in-out 0s
+.contenedor-busqueda
+    display: flex
+    width: 100%
+    height: 44px
+    position: relative
+    border-radius: 12px
+    border: 1px solid rgb(23, 25, 28)
+    background: rgb(16, 17, 19)
+    color: rgb(250, 250, 250)
+    box-sizing: border-box
+    -webkit-box-align: center
+    align-items: center
+    cursor: text
+    padding-right: 10px
+
+@media (min-width: 992px)
+.contenedor-busqueda
+    width: 30%
+
+.contenedor-lupa
+    display: flex
+    padding: 0px 12px
+
+.input-busqueda
+    height: 44px
+    background: none
+    border: none
+    width: 100%
+    overflow: hidden
+    text-overflow: ellipsis
+
+.contenedor-categorias
+    display: flex
+    height: 44px
+    font-size: 16px
+    padding: 0px 16px
+    gap: 10px
+    font-weight: 600
+    border-width: var(--border-width)
+    border-radius: var(--border-radius)
+    border-color: var(--border-color)
+    border-style: var(--border-style)
+    color: var(--color-gray-100)
+    text-align: center
+    -webkit-box-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    align-items: center
+    cursor: pointer
+    transition: background-color 200ms ease-in-out 0s, border-color 200ms ease-in-out 0s, border-color 200ms ease-in-out 0s
+    background-color: black
+
+.contenedor-titulo-desc
+    flex-direction: column
+    width: 100%
+    min-width: 300px
+    text-align: center
+    margin: 50px auto 56px
+    -webkit-box-pack: center
+    justify-content: center
+    gap: 40px
+    display: flex
+
+@media (min-width: 1000px)
+.contenedor-titulo-desc
+    padding: 0px 30px
+
+.contedor-cards-mindmap
+    width: 100%
+    iframe
+        border-radius: 20px
+
+.contedor-interno-cards-mindmap
+    display: block
+    margin-bottom: 120px
+
+.contenedor-cards
+    display: grid
+    grid-template-columns: auto auto
+    gap: 2rem 20px
+
+@media (min-width: 1000px)
+.contenedor-cards
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 2rem
+
+.contenedor-cards-interno
+    display: flex
+    flex-direction: column
+
+.contenedor-cards-img
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 16px
+    -webkit-box-align: center
+    align-items: center
+    -webkit-box-pack: center
+    justify-content: center
+    height: 140px
+    transition: background 200ms ease-in-out 0s
+    img
+        width: 100%
+        height: inherit
+        top: 0px
+        left: 0px
+        object-fit: cover
+
+@media screen and (min-width: 940px)
+.contenedor-cards-img
+    height: 262px
+
+@media screen and (min-width: 440px)
+.contenedor-cards-img
+    height: 190px
+
+.contenedor-enlaces-mindmap
+    display: flex
+    flex-direction: column
+    -webkit-box-align: center
+    align-items: center
+    -webkit-box-pack: center
+    justify-content: center
+    gap: 1rem
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.7)
+    opacity: 0
+    transition: opacity 200ms ease-in-out 0s
+    z-index: 1
+    position: absolute
+
+.bt-template-preview
+    display: flex
+    border-radius: 8px
+    height: 56px
+    width: 180px
+    max-width: 80%
+    margin: 0px auto
+    -webkit-box-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    align-items: center
+    transition: background-color 200ms ease-in-out 0s, border-color 200ms ease-in-out 0s, color 200ms ease-in-out 0s
+
+.contenedor-bt-preview
+    color: rgb(255, 45, 96)
+    text-decoration: none
+
+.contenedor-titulo-card
+    font-size: 1.125rem
+    line-height: 1.5rem
+    color: rgb(250, 250, 250)
+    padding: 1rem 0px 0px
+    font-weight: 600
+    transition: font-size 200ms ease-in-out 0s
+
+.contenedor-inicial-categorias
+    padding-top: 80px
+    position: relative
+    h2
+        text-align: center
+        margin-bottom: 64px
+
+.img-semicircles
+    position: absolute
+    left: -3%
+    top: 16%
+    width: 88.7px
+    height: 83px
+    transform: rotate(20deg)
+.img-giagonalmoon
+    position: absolute
+    right: 0px
+    bottom: 3%
+    width: 124.75px
+    height: 67.26px
+
+.contenedor-cards-categorias-interno
+    display: grid
+    margin: 40px 0px
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-rows: minmax(100px, auto)
+    gap: 40px
+
+.contenedor-cards-categorias-texto
+    display: inline-block
+    text-decoration: none
+    color: rgb(250, 250, 250)
+
+.contenedor-texto
+    display: flex
+    flex-direction: column
+    align-content: stretch
+    -webkit-box-align: stretch
+    align-items: stretch
+    padding: 32px
+    border-radius: 16px
+
+.borde-featured
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(66, 106, 136)
+
+.contenedor-texto-interno
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    overflow: hidden
+    .body-regular
+        margin-top: 20px
+
+.borde-chatGPT
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(255, 45, 96)
+
+.borde-Personal
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(250, 219, 95)
+
+.borde-Project
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(174, 53, 48)
+
+.Task
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(120, 121, 241)
+
+.Engineering
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(165, 166, 246)
+.Education
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(170, 67, 120)
+.Design
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(193, 207, 218)
+.Marketing
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(2, 138, 159)
+
+.Mind
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(239, 144, 164)
+
+.Organizational
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(237, 174, 73)
+
+.Planning
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(174, 126, 75)
+
+.Meetings
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(186, 63, 29)
+
+.Team
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(171, 86, 129)
+
+.Strategy
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(114, 25, 90)
+
+.Gaming
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(0, 166, 118)
+.Production
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(91, 149, 191)
+.Product
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(169, 104, 119)
+
+.Startup
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(199, 184, 234)
+.Remote
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(174, 180, 169)
+
+.Combinator
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(255, 155, 113)
+.Roadmap
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(151, 216, 196)
+
+.Maintenance
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(199, 242, 167)
+
+.How-Tos
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(255, 136, 17)
+.Research
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(78, 255, 239)
+
+.Music
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(83, 216, 251)
+
+.Trip
+    height: 4px
+    border-radius: 32px
+    margin-bottom: 38px
+    background-color: rgb(237, 33, 124)
+
+.contenedor-share-tamplate
+    border-top: 1px solid rgb(44, 48, 53)
+    border-bottom: 1px solid rgb(44, 48, 53)
+    border-radius: 0px
+    margin-top: 96px
+
+.contenedor-share-tamplate-interno
+    position: relative
+    display: flex
+    flex-direction: column
+    -webkit-box-align: center
+    align-items: center
+    text-align: center
+    margin: 116.5px auto
+    h2
+        margin-bottom: 20px
+    .body-lg
+        margin-bottom: 50px
+        max-width: 45%
+
+.squares
+    position: absolute
+    right: 15%
+    top: 97.2%
+    width: 121px
+    height: 122px
+
+.zigzag
+    position: absolute
+    left: 15%
+    top: 97.2%
+    width: 137px
+    height: 28px
+
+.circles
+    position: absolute
+    right: 15%
+    bottom: 98.2%
+    width: 71.67px
+    height: 107.06px
+
+.redcircles
+    position: absolute
+    left: 15%
+    bottom: 98.2%
+    width: 117.75px
+    height: 80px
+
+.contenedor-boton-share-templates
+    text-align: center
+    display: flex
+    -webkit-box-pack: center
+    justify-content: center
+    text-decoration: none
+    .contenedor-txt-bt-share-templates
+        display: flex
+        border-radius: 8px
+        width: 100%
+        place-content: stretch center
+        height: 56px
+        margin: 0px auto
+        -webkit-box-pack: center
+        -webkit-box-align: center
+        align-items: center
+    button
+        border-width: 1px
+        border-radius: 0.5rem
+        background-color: #ff2d60
+        color: #fafafa
+        box-sizing: border-box
+        -moz-box-sizing: border-box
+        -webkit-box-sizing: border-box
+        padding: 0.6rem 1.5rem
+        transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out
